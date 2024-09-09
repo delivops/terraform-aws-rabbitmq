@@ -1,4 +1,4 @@
-# terraform-aws-mq-rabbit
+# terraform-aws-rabbitmq
 
 This Terraform module provisions a RabbitMQ message broker on AWS using the AWS MQ service. RabbitMQ is an open-source message broker software that facilitates the exchange of messages between different parts of an application or between different applications. This module sets up a RabbitMQ broker with basic configurations and outputs essential information for integration.
 
