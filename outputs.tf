@@ -12,3 +12,4 @@ output "broker_endpoints" {
   value       = aws_mq_broker.rabbitmq.instances[0].endpoints
   description = "RabbitMQ broker endpoints"
 }
+
