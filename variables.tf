@@ -6,7 +6,7 @@ variable "broker_name" {
 variable "engine_version" {
   type        = string
   description = "RabbitMQ engine version"
-  default     = "3.8.11"
+  default     = "3.12.13"
 }
 
 variable "instance_type" {

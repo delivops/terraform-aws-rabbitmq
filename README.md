@@ -25,7 +25,7 @@ provider "aws" {
 
 
 module "mq-rabbit-example" {
-  source              = "delivops/mq-rabbit/aws"
+  source              = "delivops/rabbitmq/aws"
   # version  = "x.x.x"
   broker_name         = var.broker_name
   engine_version      = "3.12.13"
@@ -74,7 +74,7 @@ No modules.
 | <a name="input_allowed_cidr_blocks"></a> [allowed\_cidr\_blocks](#input\_allowed\_cidr\_blocks) | List of CIDR blocks allowed to access the RabbitMQ broker | `list(string)` | n/a | yes |
 | <a name="input_broker_name"></a> [broker\_name](#input\_broker\_name) | Name of the RabbitMQ broker | `string` | n/a | yes |
 | <a name="input_deployment_mode"></a> [deployment\_mode](#input\_deployment\_mode) | Deployment mode of the RabbitMQ broker | `string` | `"SINGLE_INSTANCE"` | no |
-| <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version) | RabbitMQ engine version | `string` | `"3.8.11"` | no |
+| <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version) | RabbitMQ engine version | `string` | `"3.12.13"` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | RabbitMQ instance type | `string` | `"mq.t3.micro"` | no |
 | <a name="input_password"></a> [password](#input\_password) | Password for RabbitMQ authentication | `string` | n/a | yes |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | List of subnet IDs for the RabbitMQ broker | `list(string)` | n/a | yes |
@@ -91,6 +91,10 @@ No modules.
 | <a name="output_broker_id"></a> [broker\_id](#output\_broker\_id) | RabbitMQ broker ID |
 <!-- END_TF_DOCS -->
 
+## information
+
+1. Time to create a broker is around 15 minutes.
+2. The password can't contains special tabs ("," for example), and must be longer than 12 letters.
 
 ## License
 
