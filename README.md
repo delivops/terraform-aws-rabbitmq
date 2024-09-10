@@ -25,7 +25,7 @@ provider "aws" {
 
 
 module "mq-rabbit-example" {
-  source              = "delivops/mq-rabbit/aws"
+  source              = "delivops/rabbitmq/aws"
   # version  = "x.x.x"
   broker_name         = var.broker_name
   engine_version      = "3.12.13"
@@ -91,6 +91,10 @@ No modules.
 | <a name="output_broker_id"></a> [broker\_id](#output\_broker\_id) | RabbitMQ broker ID |
 <!-- END_TF_DOCS -->
 
+## information
+
+1. Time to create a broker is around 15 minutes.
+2. The password can't contains special tabs ("," for example), and must be longer than 12 letters.
 
 ## License
 
