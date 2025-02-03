@@ -53,7 +53,7 @@ variable "tags" {
 }
 
 variable "auto_minor_version_upgrade" {
-  type.       = bool
+  type        = bool
   description = "Wether to allow automatic upgrade or not"
   default     = true
 }
