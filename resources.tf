@@ -44,6 +44,12 @@ resource "aws_security_group" "mq_sg" {
     protocol    = "tcp"
     cidr_blocks = var.allowed_cidr_blocks
   }
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = var.allowed_cidr_blocks
+  }
 
   egress {
     from_port   = 0
