@@ -4,6 +4,7 @@ resource "aws_mq_broker" "rabbitmq" {
   engine_type        = "RabbitMQ"
   engine_version     = var.engine_version
   host_instance_type = var.instance_type
+  auto_minor_version_upgrade = var.auto_minor_version_upgrade
 
   deployment_mode = var.deployment_mode
 
