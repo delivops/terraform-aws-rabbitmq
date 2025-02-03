@@ -51,3 +51,9 @@ variable "tags" {
   description = "Tags to apply to the RabbitMQ broker and related resources"
   default     = {}
 }
+
+variable "auto_minor_version_upgrade" {
+  type.       = bool
+  description = "Wether to allow automatic upgrade or not"
+  default     = true
+}
