@@ -72,6 +72,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_allowed_cidr_blocks"></a> [allowed\_cidr\_blocks](#input\_allowed\_cidr\_blocks) | List of CIDR blocks allowed to access the RabbitMQ broker | `list(string)` | n/a | yes |
+| <a name="input_apply_immediately"></a> [apply\_immediately](#input\_apply\_immediately) | Wether to apply changes immediately or wait for the next window | `bool` | `true` | no |
 | <a name="input_auto_minor_version_upgrade"></a> [auto\_minor\_version\_upgrade](#input\_auto\_minor\_version\_upgrade) | Wether to allow automatic upgrade or not | `bool` | `true` | no |
 | <a name="input_broker_name"></a> [broker\_name](#input\_broker\_name) | Name of the RabbitMQ broker | `string` | n/a | yes |
 | <a name="input_deployment_mode"></a> [deployment\_mode](#input\_deployment\_mode) | Deployment mode of the RabbitMQ broker | `string` | `"SINGLE_INSTANCE"` | no |

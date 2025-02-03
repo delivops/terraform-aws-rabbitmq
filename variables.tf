@@ -57,3 +57,9 @@ variable "auto_minor_version_upgrade" {
   description = "Wether to allow automatic upgrade or not"
   default     = true
 }
+
+variable "apply_immediately" {
+  type        = bool
+  description = "Wether to apply changes immediately or wait for the next window"
+  default     = true
+}
