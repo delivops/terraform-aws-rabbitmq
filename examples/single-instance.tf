@@ -9,8 +9,8 @@ module "mq-rabbit-example" {
   engine_version      = "3.12.13"
   instance_type       = "mq.t3.micro"
   deployment_mode     = "SINGLE_INSTANCE"
-  subnet_ids          = ["subnet-0bb1c79de3EXAMPLE2"]
-vpc_id              = "vpc-0bb1c79de3EXAMPLE"
+  subnet_ids          = ["subnet-xxx"]
+vpc_id              = "vpc-xxx"
 username            = "admin"
 password            = "superSecurePassword123"
 allowed_cidr_blocks = ["10.0.0.0/16"]
